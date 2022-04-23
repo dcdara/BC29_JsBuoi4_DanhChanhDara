@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container py-5">
+            <div class="row col-12 content__main">
+                <div class="col-2">
+                    <div class="nav flex-column nav-pills  item__left" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+
+                        <a class="nav-link active" id="bai1-tab" data-toggle="pill" href="#bai1" role="tab"
+                            aria-controls="bai1" aria-selected="true">Bài 1</a>
+                        <a class="nav-link" id="bai2-tab" data-toggle="pill" href="#bai2" role="tab"
+                            aria-controls="bai2" aria-selected="false">Bài 2</a>
+                        <a class="nav-link" id="bai3-tab" data-toggle="pill" href="#bai3" role="tab"
+                            aria-controls="bai3" aria-selected="false">Bài 3</a>
+                        <a class="nav-link" id="bai4-tab" data-toggle="pill" href="#bai4" role="tab"
+                            aria-controls="bai4" aria-selected="false">Bài 4</a>
+
+                    </div>
+                </div>
+                <div class="item__right col-6">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="bai1" role="tabpanel" aria-labelledby="bai1-tab">
+                            <div class="card card-outline-secondary">
+                                <div class="card-body">
+                                    <h3 class="text-center">Xuất 3 số theo thứ tự tăng dần</h3>
+                                    <hr>
+                                    
+                                    <form class="form" role="form">
+                                        <div class="form-group">
+                                            <label>Số thứ 1</label>
+                                            <input class="form-control" id="txtSoThu_1" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Số thứ 2</label>
+                                            <input class="form-control" id="txtSoThu_2" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Số thứ 3</label>
+                                            <input class="form-control" id="txtSoThu_3" type="text">
+                                        </div>
+                                        
+                                        <hr>
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <button id="btnKetQua" class="btn btn-success btn-lg btn-block"
+                                                    type="button">Kết quả</button>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group ketqua" id="txtKetQua_show">
+                                           
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="bai2-tab">
+                            <div class="card card-outline-secondary">
+                                <div class="card-body">
+                                    <h3 class="text-center">Chương trình "Chào hỏi"</h3>
+                                    <hr>
+                                    
+                                    <form class="form" role="form">
+                                        <div class="form-group">
+                                            <label>Chọn thành viên</label>
+                                            <select id="chaoHoi" class="form-control">
+                                                <option selected>...</option>
+                                                <option value="Bo">Bố</option>
+                                                <option value="Me">Mẹ</option>
+                                                <option value="anhTrai">Anh trai</option>
+                                                <option value="emGai">Em gái</option>
+                                
+                                              </select>
+                                        </div>
+                                        
+                                        <hr>
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <button id="btnChaoHoi" class="btn btn-success btn-lg btn-block"
+                                                    type="button">Gửi lời chào</button>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group ketqua" id="chaoHoi_show">
+                                           
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="bai3" role="tabpanel" aria-labelledby="bai3-tab">
+                            <div class="card card-outline-secondary">
+                                <div class="card-body">
+                                    <h3 class="text-center">Đếm số chẵn lẻ</h3>
+                                    <hr>
+                                    
+                                    <form class="form" role="form">
+                                        <div class="form-group">
+                                            <label>Số thứ 1</label>
+                                            <input class="form-control" id="txtSo_1" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Số thứ 2</label>
+                                            <input class="form-control" id="txtSo_2" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Số thứ 3</label>
+                                            <input class="form-control" id="txtSo_3" type="text">
+                                        </div>
+                                        
+                                        <hr>
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <button id="btnChanLe" class="btn btn-success btn-lg btn-block"
+                                                    type="button">Kết quả</button>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group ketqua" id="chanLe_show">
+                                           
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="bai4-tab">
+                            <div class="card card-outline-secondary">
+                                <div class="card-body">
+                                    <h3 class="text-center">Đoán hình tam giác</h3>
+                                    <hr>
+                                    
+                                    <form class="form" role="form">
+                                        <div class="form-group">
+                                            <label>Nhập độ dài cạnh 1</label>
+                                            <input class="form-control" id="txtCanh_1" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nhập độ dài cạnh 2</label>
+                                            <input class="form-control" id="txtCanh_2" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nhập độ dài cạnh 3</label>
+                                            <input class="form-control" id="txtCanh_3" type="text">
+                                        </div>
+                                        
+                                        <hr>
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <button id="btnHinh" class="btn btn-success btn-lg btn-block"
+                                                    type="button">Kết quả</button>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group ketqua" id="hinhTamGiac_show">
+                                           
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
